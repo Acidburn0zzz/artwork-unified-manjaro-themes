@@ -1,76 +1,88 @@
-# Window geometry
-padding.width: 2
-padding.height: 0
-border.width: 3
-window.client.padding.width: 0
-window.client.padding.height: 0
-window.handle.width: 0
+# Name: Numix Openbox theme
+# Author: Satyajit Sahoo <satyajit.happy@gmail.com>
+# License: GPL-3.0+
 
-#Menu geometry
-menu.border.width: 1
-menu.overlap.x: -13
-menu.overlap.y: 0
 
-# Border colors
-window.*.border.color: #ECEDEE
-menu.border.color: #000000
-window.active.client.color: #D8E18D
-window.inactive.client.color: #D8E18D
+# Menu
+menu.border.color: #fff
 
-# Text shadows
-window.active.label.text.font: shadow=n
-window.inactive.label.text.font: shadow=n
-menu.items.font: shadow=n
-menu.title.text.font: shadow=n
-
-# Window title justification
-window.label.text.justify: center
-
-# Window
-window.*.title.bg: flat
-window.*.title.bg.color: #ECEDEE
-
-window.*.label.bg: Parentrelative
-window.active.label.text.color: #8CBC65
-window.inactive.label.text.color: #555
-
-window.*.button.unpressed.bg: Flat
-window.*.button.unpressed.bg.color: #ECEDEE
-window.active.button.unpressed.image.color: #666
-window.inactive.button.unpressed.image.color: #666
-
-window.*.button.pressed.bg: Flat
-window.*.button.pressed.bg.color: #ECEDEE
-window.*.button.pressed.image.color: #999
-
-window.*.button.disabled.bg: Flat
-window.*.button.disabled.bg.color: #ECEDEE
-window.*.button.disabled.image.color: #F0F0F0
-
-window.*.button.hover.bg: Flat
-window.*.button.hover.bg.color: #ECEDEE
-window.*.button.hover.image.color: #ffffff
-
-# Menus
-menu.title.bg: Flat
-menu.title.bg.color: #191919
-menu.title.text.color: #ACACAC
+menu.title.bg: flat solid
+menu.title.bg.color: #fff
+menu.title.text.color: #444
 menu.title.text.justify: center
 
-menu.separator.color: #191919
+menu.items.bg: flat solid
+menu.items.bg.color: #fff
+menu.items.text.color: #444
+menu.items.disabled.text.color: #ababab
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #8CBC65
+menu.items.active.text.color: #f9f9f9
+
+menu.separator.color: #cfcfcf
 menu.separator.width: 1
-menu.separator.padding.width: 0
-menu.separator.padding.height: 5
+menu.separator.padding.width: 2
+menu.separator.padding.height: 4
 
-menu.items.bg: Flat Solid
-menu.items.bg.color: #191919
-menu.items.text.color: #ECEDEE
-menu.items.disabled.text.color: 
 
-menu.items.active.bg: Flat
-menu.items.active.bg.color: #191919
-menu.items.active.text.color: #8CBC65
-menu.items.active.disabled.text.color: #2C2F36
+# Active window
+window.active.border.color: #ffffff
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #ffffff
+window.active.title.separator.color: #ffffff
+window.active.text.justify: center
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #444
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #ffffff
+
+window.active.grip.bg: flat solid
+window.active.grip.bg.color: #ffffff
+
+window.active.button.unpressed.bg: flat solid
+window.active.button.unpressed.bg.color: #ffffff
+window.active.button.unpressed.image.color: #444
+
+window.active.button.pressed.bg: flat solid
+window.active.button.pressed.bg.color: #ffffff
+window.active.button.pressed.image.color: #8CBC65
+
+window.active.button.disabled.bg: flat solid
+window.active.button.disabled.bg.color: #ffffff
+window.active.button.disabled.image.color: #444
+
+
+# Inactive window
+window.inactive.border.color: #ffffff
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #ffffff
+window.inactive.title.separator.color: #ffffff
+window.inactive.text.justify: center
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #ABABAB
+
+window.inactive.handle.bg: flat solid
+
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #ffffff
+
+window.inactive.button.unpressed.bg: flat solid
+window.inactive.button.unpressed.bg.color: #ffffff
+window.inactive.button.unpressed.image.color: #ABABAB
+
+window.inactive.button.pressed.bg: flat solid
+window.inactive.button.pressed.bg.color: #ffffff
+window.inactive.button.pressed.image.color: #A4CF8F
+
+window.inactive.button.disabled.bg: flat solid
+window.inactive.button.disabled.bg.color: #ffffff
+window.inactive.button.disabled.image.color: #D0D0D0
 
 
 # OSD
@@ -105,3 +117,17 @@ osd.button.focused.*.border.color: #9c9c9c
 osd.button.focused.box.color: #8CBC65
 
 
+# Fonts
+window.active.label.text.font:shadow=n
+window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
+
+
+# Everything else
+border.width: 4
+padding.width: 8
+padding.height: 1
+window.handle.width: 0
+window.client.padding.width: 0
+window.label.text.justify: center

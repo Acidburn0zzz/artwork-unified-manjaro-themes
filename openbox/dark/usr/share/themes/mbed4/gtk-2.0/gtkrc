@@ -1,12 +1,12 @@
 gtk-color-scheme = "base_color:#131313\nbg_color:#111111"
-gtk-color-scheme = "text_color:#DCDCDC\nfg_color:#BDBDBD"
-gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
+gtk-color-scheme = "text_color:#C2C2C2\nfg_color:#BDBDBD"
+gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#CCCCCC\nlink_color:#4a90f9"
 
 ## Dark-Framed 
 #gtk-color-scheme = "theme_bg_dark_color:#575757\ntheme_fg_dark_color:#DCDCDC\ntheme_text_dark_color:#F5F5F5"
 
 ## Dark-Flat
-gtk-color-scheme = "theme_bg_dark_color:#090909\ntheme_fg_dark_color:#C0C0C0\ntheme_text_dark_color:#E0E0E0"
+gtk-color-scheme = "theme_bg_dark_color:#090909\ntheme_fg_dark_color:#ABABAB\ntheme_text_dark_color:#BBBBBB"
 
 #  selection text color
 gtk-color-scheme = "selected_fg_color:#8CBC65"
