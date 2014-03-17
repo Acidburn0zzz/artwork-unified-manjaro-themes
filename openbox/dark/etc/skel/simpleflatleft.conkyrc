@@ -1,0 +1,122 @@
+# Official ManjaroBox 0.8.9 conkyrc
+# Configured by RudyLorren
+# See links below for more information on furthur customization
+#
+## http://conky.sourceforge.net/docs.html
+#
+## http://conky.sourceforge.net/faq.html
+#
+## https://wiki.archlinux.org/index.php/conky
+#
+## http://forum.manjaro.org/index.php?topic=2991.0
+
+alignment tl
+background yes
+border_width 1
+cpu_avg_samples 2
+
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+use_xft yes
+xftfont Allerlight:size=9
+gap_x 20
+gap_y 65
+net_avg_samples 2
+double_buffer yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+own_window yes
+own_window_class Conky
+#own_window_type desktop
+own_window_transparent no
+own_window_argb_visual yes
+own_window_argb_value 255
+own_window_colour 090909
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+format_human_readable yes
+
+default_color 090909
+default_outline_color white
+default_shade_color 282828
+color1 111111
+color2 353535
+color3 5e5e5e
+color4 EBEBEB
+color5 B6BEC6
+color6 159015
+color7 35BF5C
+color8 30C834
+${font allerlight:size=9}${color3}$alignr Jams: ${color4}$mpd_smart
+${font allerlight:size=75}${color4}$alignr${time %H:%M}${voffset -75}
+${font allerlight:size=20}${color3}$alignr${time %a %d %B %Y}${voffset -15}
+${color8}${hr 1}${voffset -12}
+${font allerlight:size=27}${color8}${alignr}Manjaro${color4}Box ${color8}Evo${color4}lution${voffset -15}
+ · ${color3}RAM ${color4}$mem ·
+
+${font aller:size=45}${color8}${alignr}Evo${color5}lution${voffset -40}
+${hr 0}${voffset -60}
+
+
+#Artist
+$color3 Jams
+$color4${if_match ${execi 5 expr length "`mpc --format %artist% | head -n 1`"} >= 25}${scroll 25 3 ${mpd_artist}}${else}${mpd_artist}${endif}
+#Title
+${if_match ${execi 5 expr length "`mpc --format %title% | head -n 1`"} >= 25}${scroll 25 3 ${mpd_title}}${else}${mpd_title}${endif}
+#Album
+${if_match ${execi 5 expr length "`mpc --format %album% | head -n 1`"} >= 25}${scroll 25 3 ${mpd_album}}${else}${mpd_album}${endif}
+$mpd_elapsed / $mpd_length
+
+
+TEXT
+${font allerlight:size=9}${color4}$sysname $kernel $alignr${color3}on ${color4}$machine$font${voffset -5}
+$color3${hr 0}
+${color3}Host $alignr${color4}$nodename${voffset 2}
+${color3}Uptime $alignr${color4}$uptime_short${voffset 2}
+${color3}Desktop $alignr${color8}${if_match ${desktop}==1}${color4}1${else}${color3}1${endif} ${if_match ${desktop}==2}${color4}2${else}${color3}2${endif} ${if_match ${desktop}==3}${color4}3${else}${color3}3${endif} ${if_match ${desktop}==4}${color4}4${else}${color3}4${endif} 
+${color3}Temp $alignr${color4}${platform coretemp.0 temp 2}°
+${color3}${color3}Cpu $alignr${color4}${cpu cpu0}%
+$color4${cpugraph cpu0}
+${color3}Ram$alignr$color4$mem / $memmax
+$color4${memgraph} 
+${color3}Hdd $alignr${color4}$fs_used / $fs_size
+
+$color4$fs_bar
+
+$font$color3 Window Snapping
+$font$color4 Super + (Up,Down,Left,Right)
+
+$font$color3 Show Desktop
+$font$color4 Super + D
+
+$font$color3 Close Window
+$font$color4 Super + X
+
+$font$color3 Dmenu
+$font$color4 Super + Space
+
+$font$color3 Gmrun
+$font$color4 Super + Z
+
+$font$color3 Lxterminal
+$font$color4 Super + Enter
+
+$font$color3 Thunar
+$font$color4 Super + F
+
+$font$color3 Leafpad
+$font$color4 Super + E
+
+$font$color3 Restart Openbox
+$font$color4 Super + Esc
+
+$font$color3 Logout
+$font$color4 Super + Alt + Esc
