@@ -1,0 +1,64 @@
+ackground yes
+use_xft yes
+xftfont AllerLight L:size=8
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour white
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+alignment bottom_middle
+maximum_width 1400
+minimum_size 1400 24
+gap_x 5
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+use_spacer left
+default_color 090909
+default_outline_color white
+default_shade_color 282828
+color1 111111
+color2 353535
+color3 5e5e5e
+color4 EBEBEB
+color5 B6BEC6
+color6 159015
+color7 35BF5C
+color8 47D06E
+##############################################
+#  Output
+##############################################
+
+TEXT
+  ${alignc}${image $HOME/manjaro.png -p 390,0 -s 30x30 -n}${offset 40}${voffset 5}${font allerlight:size=18}${color4}anjarobox\
+  ${font}${color4}$sysname $kernel ${color8}on ${color4}$machine  | \
+  ${color8}Cpu ${color4}${cpu cpu0}% @ ${platform coretemp.0 temp 2}°  | \
+  ${color8}Ram $color4$mem / $memmax \
+  ${color8}Hdd ${color4}$fs_used / $fs_size
+  
+  $alignc$font$color8 Window Snapping \
+  $alignc$font$color4 Super + (Up,Down,Left,Right)  | \
+  $alignc$font$color8 Dmenu \
+  $alignc$font$color4 Super + Space  | \
+  $alignc$font$color8 Lxterminal \
+  $alignc$font$color4 Super + Enter  | \
+  $alignc$font$color8 Thunar \
+  $alignc$font$color4 Super + F  | \
+  $alignc$font$color8 Leafpad \
+  $alignc$font$color4 Super + E  | \
+  $alignc$font$color8 Logout \
+  $alignc$font$color4 Super + Alt + Esc \
+
+ 
+  
