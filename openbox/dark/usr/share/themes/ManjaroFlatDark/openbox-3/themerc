@@ -45,7 +45,7 @@ menu.items.active.disabled.text.color: #6d6d6d
 
 menu.title.bg:           Solid Flat
 menu.title.bg.color:     #090909
-menu.title.text.color:   #969696
+menu.title.text.color:   #a7a7a7
 menu.title.text.justify: Center
 menu.title.text.font:    shadow=n
 
@@ -77,11 +77,11 @@ window.inactive.title.bg: Solid Flat
 window.inactive.title.bg.color: #090909
 
 window.active.label.bg:         Parentrelative
-window.active.label.text.color: #969696
+window.active.label.text.color: #a7a7a7
 window.active.label.text.font:  shadow=n
 
 window.inactive.label.bg:         Parentrelative
-window.inactive.label.text.color: #2D2D2D
+window.inactive.label.text.color: #676767
 window.inactive.label.text.font:  shadow=n
 
 window.active.button.unpressed.bg:          Solid Flat
